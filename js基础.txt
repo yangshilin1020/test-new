@@ -1,0 +1,96 @@
+计算机内部存储： true为1，false为0
+
+
+arr.length = 0 清空数组
+
+arr.includes()  查找数组中的某一项 
+
+var a = 25;
+function abc() {
+  alert(a); 	//undefined
+  var a = 10;
+}
+abc();
+
+ 如果把 var a = 10 则是25
+
+
+
+ var a = b = c = 9;	//定义了一个局部变量a，以及全局变量b和c
+
+
+   new Date （）
+  + new Date（） 毫秒数
+   Date.now （） 毫秒数
+
+
+字符串不可变还会在内存中 大量拼接时候会有效率问题 
+
+
+、sli
+
+
+ce(start，end)不包括end
+
+ splice(start,deleteCount,item1,item2…..);
+
+start参数 开始的位
+置
+deleteCount 要截取的个数
+后面的items为要添加的元素
+如果deleteCount
+为0，则表示不删除元素，从start位置开始添加后面的几个元素到原始的数组里面
+返回值为由
+被删除的元素组成的一个数组。如果只删除了一个元素，则返回只包含一个元素的数组。如果没有删
+除元素，则返回空数组
+这个方法会改变原始数组，数组的长度会发生变化
+
+
+
+str[0]  
+
+
+charAt()    	//获取指定位置处字符
+charCodeAt()  	//获取指定位置处字符的ASCII码
+str[0]   		//HTML5，IE8+支持 和charAt()等效
+
+
+concat()   		//拼接字符串，等效于+，+更常用
+slice()    		//从start位置开始，截取到end位置，end取不到
+substring() 	//从start位置开始，截取到end位置，  end取不到
+substr()   		//从start位置开始，截取length个字符
+
+
+
+
+indexOf()   	//返回指定内容在元字符串中的位置
+lastIndexOf() 	//从后往前找，只找第一个匹配的
+
+
+
+
+<script type="text/javascript">
+
+var str="Visit W3School!"
+document.write(str.search(/W3School/))
+
+</script>
+
+6
+
+
+
+
+
+
+
+trim()  		//只能去除字符串前后的空白
+
+indexOf()、lastIndexOf()   /数组
+
+
+indexOf()   	//返回指定内容在元字符串中的位置
+lastIndexOf() 	//从后往前找，只找第一个匹配的
+
+
+js中的 '<br>' 可以解析为标签

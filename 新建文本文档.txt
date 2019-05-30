@@ -1,0 +1,190 @@
+点击按钮 button  发送ajax请求  input中的提交字符串 那么submit改为button
+
+
+form表单重置、清空方法记录
+
+
+
+Bootstrap 3 Sinnpet
+
+$('#form')[0].reset()
+
+parent.location.reload()父页面刷新
+
+
+双向绑定
+
+学习雪花代码
+
+axios git上传
+百里上传
+
+shadowsocksR github  系统代理模式
+my.ss8.fun
+好来，potplayer 翻墙第一件事 别说我没告诉你
+
+
+req.query.params #后面东西
+
+
+svn集中式
+git分布式
+
+
+input change 事件
+语法糖 双向
+简单计算机
+
+
+
+v-for 指令  增强标签的功能  让标签具备遍历的功能
+
+
+
+hash 属性是一个可读可写的字符串，该字符串是 URL 的锚部分（从 # 号开始的部分）。
+
+
+
+
+
+location.assign(“http://www.baidu.com“) 
+这样就可以立即打开新的URL并在浏览器的历史记录中生成一条记录。 
+
+月份是从0 开始的 不是从一月开始的
+
+
+javascript:;  返回值为空值或者false  是一个伪协议 不会跳转
+
+
+查询的结果一定是一个数组
+
+
+<a href="javascript:;" 
+
+
+删除按钮 一列事不加id了 在class中添加  因为不是单一的
+
+加一个自定义属性 data
+var cate_id = $(this).attr('data')
+
+
+yangshilinkd@
+
+
+vue3.0 
+typescript
+
+
+跨文本消息传递
+
+
+
+接受get 的query是不是一个内置方法
+
+
+
+ $('tbody').on('click','.del',function(){
+给删除按钮添加事件 用事件委托 因为是页面刷新完成在出来的
+事件代理 事件委托
+如果给每一个按钮添加事件，极为繁琐，这时候需要用到事件代理。
+
+事件代理是基于浏览器的事件冒泡机制。
+
+
+
+$('tbody').on('click','.del',function(){
+    if(confirm('删除吗')== false){
+      return false
+    }
+
+
+
+return 结束不在往下执行 了
+
+
+
+$ajax中的this
+
+箭头函数的this是外部的
+
+
+
+<a href="/admin/cate/editcate?id={#$vaule.cate_id#}" 
+这个也可以发送请求吗
+可以的 相当于浏览器请求 网址后面是 参数
+
+
+
+result.affcetRows ！=1
+
+
+原生发送用 submit   得写 meathod action 还有 enctype 
+原生用ajax 
+
+
+
+
+s6新语法
+面向对象
+
+箭头函数没有this，使用的是当前定义的上一级this
+
+
+
+
+
+
+
+
+
+
+
+switch(n)n通常是一个变量
+
+
+
+
+foreach（）
+findindex（） 根据条件找索引
+转换为 布尔值
+什么转换为false
+
+
+
+autofocusH5新方法
+
+
+es6
+Array.filter()
+String.includes()
+
+
+indexof
+instanceof
+
+for in 
+方法 语法 属性 
+
+foreach
+
+隐式转换
+
+https://blog.csdn.net/quhongqiang/article/details/80388401
+
+
+封装ajax
+
+es7
+
+
+
+MVC   MVVC
+
+findIndex
+padstaut padend
+
+
+
+onfocus绑定事件
+focus（） 事件
+

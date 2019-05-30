@@ -1,0 +1,334 @@
+﻿HTML2.0第一个版本
+
+XHTML是基于HTML4.01    语法更严格    XHTML 只允许小写
+
+
+
+IE  火狐 谷歌 safari浏览器 Opera浏览器 五大浏览器
+
+网站由文字图像 超链接 等 元素构成。  还有视频音频 flash等 
+
+
+
+flash是 一个浏览器插件承载网页的flash动画 视频
+
+
+
+浏览器内核分为两个部分  渲染引擎 和 js 引擎
+
+IE到11 Edge是衍生版 
+
+双核浏览器就是 极速浏览器 包括一个Trident
+webkit是苹果
+IE是Trident
+Gecko是火狐
+Blink是谷歌
+presto是Opera 已经投入谷歌怀抱
+
+
+Android手机而言，使用率最高的就是Webkit内核，大部分国产浏览器宣称的自己的内核，基本上也是属于webkit二次开发。
+
+
+超文本就不单单是写字  还可以加入这个图片 声音 动画
+
+
+<HTML>也称为标签或元素
+
+
+<!DOCTYPE html>告诉浏览器使用的什么版本的HTML
+HTML5是向下兼容的原则
+
+
+
+为什么要有语义化标签
+
+
+1. 方便代码的阅读和维护
+
+2. 同时让浏览器或是网络爬虫可以
+很好地解析，从而更好分析其中的内容 
+
+3. 使用语义化标签会具有更好地搜索引擎优化 
+
+核心：合适的
+地方给一个最为合理的标签。
+
+语义是否良好： 当我们去掉CSS之后
+，网页结构依然组织有序，并且有良好的可读
+性。
+
+白话，一眼看去，就知道那个是重点，结构是
+什么，知道每块的内容是干啥的。
+
+遵循的原则：先确定语义的
+HTML ，再选合适的CSS。
+
+
+
+
+
+
+搜索引擎优化也可以使用语义化
+TDK
+
+
+h1只是用一次 多了不利于SEO（搜索引擎优化）
+
+
+html标签中的 lang = en 提示用户要不要翻译
+
+
+strong b  strong语义更强烈  b 只有使用,没有语义更加的强烈
+del s
+ins u 
+em i 
+
+division 分割 分区的意思
+span 跨度 跨距 范围
+
+img alt 文本  图片不能显示时的替换文本 还有一个border 的属性 设置图像边框的宽度
+tltle 鼠标悬停在图片上的内容
+
+为了解决HTTP协议的这一缺陷，需要使用另一种协议：安全套接字层超文本传输协议HTTPS，为了数据传输的安全，HTTPS在HTTP的基础上加入了SSL协议，SSL依靠证书来验证服务器的身份，并为浏览器和服务器之间的通信加密。
+超文本传输协议HTTP协议被用于在Web浏览器和网站服务器之间传递信息，HTTP协议以明文方式发送内容，不提供任何方式的数据加密，如果攻击者截取了Web浏览器和网站服务器之间的传输报文，就可以直接读懂其中的信息，因此，HTTP协议不适合传输一些敏感信息，比如：信用卡号、密码等支付信息。
+
+
+
+anchor 的缩写  [ˈæŋkə(r)] 。基本解释 锚, 铁锚 的
+
+
+base 可以设置整体链接的打开状态  
+ 
+
+base 写到  <head>  </head>  之间
+
+把所有的连接 
+都默认添加 target="_blank"
+
+
+<head>
+<base target="_blank" />
+</head>
+
+
+绝对路径 是一个完整路径 或网站地址
+
+
+ul无序 ol有序 dl自定义列表
+
+
+超链接 锚链接
+<a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a>
+target self不打开新窗口    _blank新开一个空页面
+
+
+rowspan=xx (合并xx行，同时需要把下一行删除xx个<td></td>标签 ，如果不删处表格就会被变形)
+colspan=xx (合并xx列，同时需要把本行删除xx个<td></td>标签 ，同样不删除表格就会变形)
+列就删除本行td   行就删除下一行td
+
+
+cellpadding单元格边框与内容之间的距离
+cellspacing  单元格边框与单元格之间的空白距离默认2设为0
+bgcolor可以用的 行内
+
+1. 如果按照规范写法，会在一些低版本浏览器中出现兼容性问题（IE低版本）
+
+2. 在高版本浏览器中，浏览器默认会自动帮我们添加主体
+
+
+在HTML中，一个完整的表单通常由表单控件（也称为表单元素）、提示信息和表单域3个部分构成。
+
+
+
+input  
+hidden
+text输入框
+password
+submit提交按钮 
+radio 单选按钮 (圆圈
+checkbox方形  checked
+button普通按钮(没有字
+reset重置按钮
+img图片形式提交
+<input type="image" name="" src="按钮.jpg">
+name提交表单必填属性（不是文件，框内字符）
+maxlength最多字符数
+value默认值
+reset重置按钮
+放到表单中可以重置不用选name值
+file文件域  (选择文件  提交
+<input type="button" value="按钮">   不能提交数据，可以和js配合使用
+<input type="hidden" /> 定义隐藏字段。隐藏字段对于用户是不可见的。隐藏字段通常会存储一个默认值，它们的值也可以由 JavaScript 进行修改。	
+
+video width = "800" autoplay = "autoplay" controls= "controls
+ sourcen  src
+
+<audio src="audio/校长 - 带你去旅行.mp3"  controls="controls"></audio> loop循环
+
+
+
+
+label 标签为 input 元素定义标注（标签）。
+
+
+作用：  用于绑定一个表单元素, 当点击label标签的时候, 
+被绑定的表单元素就会获得输入焦点
+
+如何绑定元素呢？
+
+
+for 属性规定 label 与哪个表单元素绑定。
+
+<label for="male">Male</label>
+<input type="radio" name="sex" id="male" value="male">
+
+
+
+Trident(IE内核)： 
+	IE、傲游、世界之窗浏览器、Avant、腾讯TT、猎豹安全浏览器、360极速浏览器、百度浏览器等
+webkit(Safari):
+	Safari 是苹果公司开发的浏览器，所用浏览器内核的名称是大名鼎鼎的 WebKit。傲游浏览器3、 Apple Safari (Win/Mac/iPhone/iPad)、Symbian手机浏览器、Android 默认浏览器。
+
+
+如果需要输入大量的信息，就需要用到<textarea></textarea>标签。通过textarea控件可以轻松地创建多行文本输入框，其基本语法格式如下：
+
+
+
+<textarea cols="每行中的字符数" rows="显示的行数">
+
+
+
+，form标签被用于定义表单域，即创建一个表单，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。创建表单的基本语法格式如下：
+<form action="url地址" method="提交方式" name="表单名称">
+  各种表单控件
+</form>
+
+1. Action
+   在表单收集到信息后，需要将信息传递给服务器进行处理，action属性用于指定接收并处理表单数据的服务器程序的url地址。
+2. method
+   用于设置表单数据的提交方式，其取值为get或post。
+3. name
+   用于指定表单的名称，以区分同一个页面中的多个表单。
+
+
+在没有css之前就用是表格布局
+
+
+
+
+1. 如果要实现单选效果，那么需要设置相同的name值
+			   <input type="radio" name="abc">男
+			   <input type="radio" name="abc">女
+
+			2. checked="checked" 设置默认选中项
+
+
+
+
+
+
+	 <form action="1.js" method="post">
+
+                用户名: <input type="text" name="username">
+
+                <br>
+                <br>
+
+                密码: <input type="password" name="pwd">
+
+                <br>
+                <br>
+
+                <input type="submit" name="">
+
+video用来显示视频
+ ☞ 属性:
+ 	  src: 设置显示视频路径
+ 	  controls: 显示控制栏
+ 	  loop: 控制视频循环播放
+ 	  autoplay: 自动播放
+ 	  
+  解决视频或音频标签自动播放在谷歌浏览器中不起作用: 
+      在chrome 浏览器中输入：chrome://flags
+      再搜索audio,找到Autoplay policy
+      再在右侧的选项中设置为 no user gesture is required 即可
+          </form>
+   disabled="disabled"  当前控件没有被渲染成功（没有被激活）【不能输入】
+name设置控件名称
+☞ audio用来播放音频
+用法与video标签一样.
+<audio src="See You Again.mp3"  autoplay></audio>
+
+
+
+
+
+	<input type="text" list="abc">
+
+    		<datalist id="abc">
+    			 <option>前端开发</option>
+    			 <option>web前端开发</option>
+    			 <option>java开发</option>
+    			 <option>PHP开发</option>
+    		</datalist>
+
+
+
+input  type
+还有range滑块
+date时间框
+color
+ 用来校验用户输入的是否是合法的邮箱地址:<input type="email">
+
+ 		 
+用户只能输入数字: <input type="number">
+
+ 		
+ 用户只能输入合法的网址: <input type="url">
+
+上传控件 type=“file”
+
+
+
+js插件富文本编辑器
+
+	<select  multiple>  按住ctrl实现多选效果
+
+
+<select>
+      <optgroup label="河北省">
+
+ 	    		 <option>张家口</option>
+
+ 	    		 <option>保定</option>
+
+ 	    		 <option>邯郸</option>
+
+ 	    	</optgroup>
+
+ 	    	<optgroup label="北京">
+
+ 	    		 <option>海淀区</option>
+
+ 	    		 <option>昌平区</option>
+
+ 	    		 <option>朝阳区</option>
+
+ 	    	</optgroup>
+
+ 	    </select>
+label作为当前小列表的标题不能选择
+
+
+
+<meta name="description"  content="网页的具体描述信息">
+<meta name="keywords" content="培训,前端培训,web培训">
+
+
+
+
+1. 改变文字颜色需要添加color属性   <font color="red">我是红颜色的文字</font>
+    2.  改变文字大小需要添加size属性    <font color="orange" size="7">我是红颜色的文字</font>
+
+
+
